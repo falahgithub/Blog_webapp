@@ -1,0 +1,24 @@
+<%-include("partials/header");-%>
+
+
+
+
+
+<%postsc.forEach(function (e) { %>
+
+<div class="">
+
+
+  <h1><%=e.title%></h1>
+  <p><%=e.content.slice(0,100) + "..." %> <a href="/posts/<%=e.title%>"> Read More</a></p>
+
+
+
+</div>
+
+<% }); %>
+
+
+
+
+<%-include("partials/footer");-%>
